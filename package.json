@@ -1,0 +1,25 @@
+{
+  "name": "cityrec",
+  "version": "1.0.0",
+  "private": true,
+  "author": "Saadi Myftija",
+  "scripts": {
+    "client": "cd client && yarn start",
+    "server": "nodemon server.js",
+    "dev": "concurrently --kill-others-on-fail \"yarn server\" \"yarn client\"",
+    "start": "node server.js",
+    "heroku-postbuild": "cd client && npm install && npm install --only=dev --no-shrinkwrap && npm run build"
+  },
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "cors": "^2.8.5",
+    "euclidean-distance": "^1.0.0",
+    "express": "^4.16.4",
+    "helmet": "^3.15.0",
+    "lodash": "^4.17.11",
+    "mongoose": "^5.3.14"
+  },
+  "devDependencies": {
+    "concurrently": "^4.0.1"
+  }
+}

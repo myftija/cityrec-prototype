@@ -16,7 +16,7 @@
     "euclidean-distance": "^1.0.0",
     "express": "^4.16.4",
     "helmet": "^3.15.0",
-    "lodash": "^4.17.11",
+    "lodash": "^4.17.13",
     "mongoose": "^5.3.14"
   },
   "devDependencies": {
